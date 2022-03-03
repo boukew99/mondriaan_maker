@@ -1,0 +1,195 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://color_drop_rect/color_drop_rect.tscn" type="PackedScene" id=1]
+[ext_resource path="res://color_drag_button/color_drag_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://mondriaan.gd" type="Script" id=3]
+
+[sub_resource type="InputEventKey" id=1]
+scancode = 67
+
+[sub_resource type="ShortCut" id=2]
+shortcut = SubResource( 1 )
+
+[node name="Mondriaan" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 607.0
+margin_bottom = 402.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 600.0
+margin_bottom = 20.0
+
+[node name="ColorDragButton" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 2 )]
+margin_right = 32.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 32, 0 )
+color = Color( 0.980392, 0.788235, 0.00392157, 1 )
+
+[node name="ColorDragButton2" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_right = 68.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 32, 0 )
+color = Color( 1, 1, 1, 1 )
+
+[node name="ColorDragButton3" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_right = 104.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 32, 0 )
+color = Color( 0.133333, 0.313726, 0.584314, 1 )
+
+[node name="ColorDragButton4" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_right = 140.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 32, 0 )
+color = Color( 0.866667, 0.00392157, 0, 1 )
+
+[node name="ColorDragButton5" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_right = 176.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 32, 0 )
+
+[node name="Capture" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 180.0
+margin_right = 241.0
+margin_bottom = 20.0
+shortcut = SubResource( 2 )
+text = "Capture"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_left = 245.0
+margin_top = 3.0
+margin_right = 481.0
+margin_bottom = 17.0
+text = "drag & drop colors on the rectangles!"
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 600.0
+margin_bottom = 395.978
+rect_min_size = Vector2( 600, 371.978 )
+size_flags_vertical = 3
+
+[node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 593.0
+margin_bottom = 364.978
+split_offset = 120
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer"]
+margin_right = 586.0
+margin_bottom = 120.0
+split_offset = 120
+
+[node name="ColorDropRect3" parent="VBoxContainer/PanelContainer/VSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_right = 120.0
+margin_bottom = 120.0
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/HSplitContainer"]
+margin_left = 132.0
+margin_right = 586.0
+margin_bottom = 120.0
+split_offset = -180
+
+[node name="ColorDropRect" parent="VBoxContainer/PanelContainer/VSplitContainer/HSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_right = 262.0
+margin_bottom = 120.0
+size_flags_horizontal = 3
+
+[node name="ColorDropRect2" parent="VBoxContainer/PanelContainer/VSplitContainer/HSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_left = 274.0
+margin_right = 454.0
+margin_bottom = 120.0
+
+[node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer"]
+margin_top = 132.0
+margin_right = 586.0
+margin_bottom = 357.978
+split_offset = 120
+
+[node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer"]
+margin_right = 586.0
+margin_bottom = 120.0
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/VSplitContainer"]
+margin_right = 586.0
+margin_bottom = 120.0
+split_offset = 120
+
+[node name="ColorDropRect8" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_right = 120.0
+margin_bottom = 120.0
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer"]
+margin_left = 132.0
+margin_right = 586.0
+margin_bottom = 120.0
+split_offset = -180
+
+[node name="ColorDropRect7" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_right = 262.0
+margin_bottom = 120.0
+size_flags_horizontal = 3
+
+[node name="ColorDropRect8" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_left = 274.0
+margin_right = 454.0
+margin_bottom = 120.0
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer"]
+margin_top = 132.0
+margin_right = 586.0
+margin_bottom = 225.978
+split_offset = 120
+
+[node name="ColorDropRect4" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_right = 120.0
+margin_bottom = 93.978
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/HSplitContainer"]
+margin_left = 132.0
+margin_right = 586.0
+margin_bottom = 93.978
+split_offset = -180
+
+[node name="ColorDropRect5" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/HSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_right = 262.0
+margin_bottom = 93.978
+size_flags_horizontal = 3
+
+[node name="ColorDropRect6" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/HSplitContainer/HSplitContainer" instance=ExtResource( 1 )]
+margin_left = 274.0
+margin_right = 454.0
+margin_bottom = 93.978
+
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 543.0
+margin_bottom = 338.0
+access = 2
+filters = PoolStringArray( "*.png" )
+current_dir = "/Users/bouke/Documents/GitHub/mondriaan_maker"
+current_path = "/Users/bouke/Documents/GitHub/mondriaan_maker/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Capture" to="." method="_on_Capture_pressed"]
+[connection signal="file_selected" from="FileDialog" to="." method="_on_FileDialog_file_selected"]
