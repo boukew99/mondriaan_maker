@@ -2,7 +2,6 @@ extends Control
 
 func _ready():
 	OS.min_window_size = OS.window_size
-	$FileDialog.current_dir = OS.get_executable_path().get_base_dir()
 	if OS.get_name() == "HTML5": $VBoxContainer/HBoxContainer/Capture.hide()
 
 func _on_Capture_pressed():
