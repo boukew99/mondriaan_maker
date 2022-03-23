@@ -1,7 +1,7 @@
 extends ColorRect
 
 func can_drop_data(_position, data):
-	return data is Color
+	return data is Color 
 
 func drop_data(_position, data):
 	color = data

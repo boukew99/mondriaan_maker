@@ -2,7 +2,7 @@ extends Control
 
 func _ready():
 	OS.min_window_size = OS.window_size
-	if OS.get_name() == "HTML5": $VBoxContainer/HBoxContainer/Capture.hide()
+	if OS.get_name() == "HTML5": $VBoxContainer/HBoxContainer/Capture.hide() # Saving does not work on HTML5?
 
 func _on_Capture_pressed():
 	$FileDialog.popup_centered()
