@@ -99,15 +99,14 @@ text = "drag & drop colors on the rectangles!"
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
 margin_top = 24.0
 margin_right = 600.0
-margin_bottom = 395.978
-rect_min_size = Vector2( 600, 371.978 )
+margin_bottom = 395.0
 size_flags_vertical = 3
 
 [node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer/PanelContainer"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 593.0
-margin_bottom = 364.978
+margin_bottom = 364.0
 split_offset = 120
 __meta__ = {
 "_edit_use_anchors_": false
@@ -153,7 +152,7 @@ __meta__ = {
 [node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer"]
 margin_top = 132.0
 margin_right = 586.0
-margin_bottom = 357.978
+margin_bottom = 357.0
 split_offset = 120
 
 [node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer"]
@@ -200,12 +199,12 @@ __meta__ = {
 [node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer"]
 margin_top = 132.0
 margin_right = 586.0
-margin_bottom = 225.978
+margin_bottom = 225.0
 split_offset = 120
 
 [node name="ColorDropRect4" type="ColorRect" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/HSplitContainer"]
 margin_right = 120.0
-margin_bottom = 93.978
+margin_bottom = 93.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -214,12 +213,12 @@ __meta__ = {
 [node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/HSplitContainer"]
 margin_left = 132.0
 margin_right = 586.0
-margin_bottom = 93.978
+margin_bottom = 93.0
 split_offset = -180
 
 [node name="ColorDropRect5" type="ColorRect" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/HSplitContainer/HSplitContainer"]
 margin_right = 262.0
-margin_bottom = 93.978
+margin_bottom = 93.0
 size_flags_horizontal = 3
 script = ExtResource( 1 )
 __meta__ = {
@@ -229,7 +228,7 @@ __meta__ = {
 [node name="ColorDropRect6" type="ColorRect" parent="VBoxContainer/PanelContainer/VSplitContainer/VSplitContainer/HSplitContainer/HSplitContainer"]
 margin_left = 274.0
 margin_right = 454.0
-margin_bottom = 93.978
+margin_bottom = 93.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
