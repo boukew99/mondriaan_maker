@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://color_drop_rect.gd" type="Script" id=1]
 [ext_resource path="res://color_drag_button.gd" type="Script" id=2]
 [ext_resource path="res://mondriaan.gd" type="Script" id=3]
+[ext_resource path="res://addons/screen_capture/screen_capture.tscn" type="PackedScene" id=4]
 
 [sub_resource type="InputEventKey" id=1]
 scancode = 67
@@ -234,18 +235,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="FileDialog" type="FileDialog" parent="."]
+[node name="ScreenCapture" parent="." instance=ExtResource( 4 )]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 543.0
-margin_bottom = 338.0
-access = 2
-filters = PoolStringArray( "*.png" )
-current_dir = "/Users/bouke/Documents/GitHub/mondriaan_maker"
-current_path = "/Users/bouke/Documents/GitHub/mondriaan_maker/"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+margin_right = 507.0
+margin_bottom = 307.0
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Capture" to="." method="_on_Capture_pressed"]
-[connection signal="file_selected" from="FileDialog" to="." method="_on_FileDialog_file_selected"]
