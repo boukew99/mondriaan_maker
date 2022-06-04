@@ -20,4 +20,5 @@ margin_top = 210.0
 margin_right = 614.0
 margin_bottom = 409.0
 size_flags_vertical = 3
+color = Color( 0.878431, 0.898039, 0.905882, 1 )
 script = ExtResource( 2 )

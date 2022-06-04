@@ -14,3 +14,5 @@ Features:
 * 3x3 resizable rectangles.
 * capture and save
 * resizable window
+
+<https://jxapprentice.com/en/art-color-chain-r1-en/>

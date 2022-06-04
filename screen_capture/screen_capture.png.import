@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/screen_capture.png-b08ef33099c2dab0e3f79fe757d298e7.stex"
+path="res://.import/screen_capture.png-939d06db96bc7985202e112ee5481e25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/screen_capture/screen_capture.png"
-dest_files=[ "res://.import/screen_capture.png-b08ef33099c2dab0e3f79fe757d298e7.stex" ]
+source_file="res://screen_capture/screen_capture.png"
+dest_files=[ "res://.import/screen_capture.png-939d06db96bc7985202e112ee5481e25.stex" ]
 
 [params]
 
