@@ -3,19 +3,28 @@
 [ext_resource path="res://screen_capture/screen_capture.gd" type="Script" id=1]
 [ext_resource path="res://screen_capture/camera_snap.wav" type="AudioStream" id=2]
 
-[node name="ScreenCapture" type="FileDialog"]
+[node name="ScreenCapture" type="ConfirmationDialog"]
 margin_right = 597.0
 margin_bottom = 434.0
-access = 2
-filters = PoolStringArray( "*.png" )
-current_dir = "/home/bouke/mondriaan_maker"
-current_path = "/home/bouke/mondriaan_maker/"
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Preview" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
 
 [node name="Captured" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
 
-[connection signal="file_selected" from="." to="." method="_on_ScreenCapture_file_selected"]
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 507.0
+margin_bottom = 307.0
+access = 2
+filters = PoolStringArray( "*.png" )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[connection signal="confirmed" from="." to="." method="_on_ScreenCapture_confirmed"]
+[connection signal="file_selected" from="FileDialog" to="." method="_on_FileDialog_file_selected"]
