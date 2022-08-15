@@ -13,7 +13,6 @@ config_version=4
 config/name="Mondriaan Maker"
 run/main_scene="res://mondriaan.tscn"
 run/low_processor_mode=true
-config/icon="res://icon.png"
 config/windows_native_icon="res://windows_icon.ico"
 
 [display]

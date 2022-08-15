@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/new_colors.png-322f9382ac8e1385add628f72b02df98.stex"
+path="res://.import/Screenshot from 2022-08-15 13-14-03.png-5c039d1daede6121921f2aac31ca1d5c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://export/new_colors.png"
-dest_files=[ "res://.import/new_colors.png-322f9382ac8e1385add628f72b02df98.stex" ]
+source_file="res://Screenshot from 2022-08-15 13-14-03.png"
+dest_files=[ "res://.import/Screenshot from 2022-08-15 13-14-03.png-5c039d1daede6121921f2aac31ca1d5c.stex" ]
 
 [params]
 

@@ -1,24 +1,25 @@
 extends Button
 
+const blue = Color("014a97")
+const red = Color("d4121a")
+const yellow = Color("f0ce06")
+const black = Color("0e2721")
+const white = Color("e0e5e7")
+const palette = [blue, red, yellow, black, white]
 
-var depth = 0
 var rng = RandomNumberGenerator.new()
 const split_value = 1.116481401 # (1 / 1.613 + 1.613) / 2
-const palette = [Color("014a97"), Color("d4121a"), Color("f0ce06"), Color("0e2721"), Color("e0e5e7")]
 
 func _on_SplitButton_pressed():
 	var split = HSplitContainer.new() if rect_size.aspect() > split_value else VSplitContainer.new()
 
-	get_tree().call_group("rect", "add_count")
 	split.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	split.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	
 	var child = duplicate()
-	child.depth = depth + 1
 	split.add_child(child)
 	
 	var child2 = duplicate()
-	child2.depth = depth + 1
 	rng.randomize()
 	if rng.randf() > 0.8:
 		var color_index = rng.randi_range(0, palette.size() -1)
@@ -39,7 +40,7 @@ func get_drag_data(_position):
 	preview.rect_position += Vector2(4,4)
 	
 	var border = ColorRect.new()
-	border.color = modulate.inverted()
+	border.color = Color("e0e5e7")
 	border.rect_size = preview.rect_size + Vector2(8, 8)
 	
 	border.add_child(preview)
@@ -52,3 +53,21 @@ func can_drop_data(_position, data):
 
 func drop_data(position, data):
 	modulate = data
+	
+	# 2 black -> remove split
+	if not data == black:
+		return
+		
+	var parent = get_parent()
+	if not parent is SplitContainer:
+		return
+		
+	var other_child = parent.get_child( 0 if get_index() else 1)
+	if not other_child.modulate == black:
+		return
+		
+	var grandfather = get_parent().get_parent()
+	parent.remove_child(self)
+	grandfather.add_child(self)
+	grandfather.move_child(self, parent.get_index())
+	parent.queue_free()
