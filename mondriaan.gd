@@ -12,3 +12,4 @@ func _on_Capture_pressed():
 
 func _on_ScreenCapture_captured():
 	capture.show()
+

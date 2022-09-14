@@ -20,6 +20,7 @@ func _on_SplitButton_pressed():
 	split.add_child(child)
 	
 	var child2 = duplicate()
+	child2.modulate = white
 	rng.randomize()
 	if rng.randf() > 0.8:
 		var color_index = rng.randi_range(0, palette.size() -1)
