@@ -13,6 +13,8 @@ config_version=4
 config/name="Mondriaan Maker"
 run/main_scene="res://mondriaan.tscn"
 run/low_processor_mode=true
+boot_splash/image="res://sample.png"
+boot_splash/bg_color=Color( 0.054902, 0.152941, 0.129412, 1 )
 config/icon="res://icon.png"
 config/windows_native_icon="res://windows_icon.ico"
 
@@ -20,7 +22,3 @@ config/windows_native_icon="res://windows_icon.ico"
 
 window/size/width=614
 window/size/height=409
-
-[physics]
-
-common/enable_pause_aware_picking=true
