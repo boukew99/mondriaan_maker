@@ -55,6 +55,8 @@ func can_drop_data(_position, data):
 func drop_data(position, data):
 	modulate = data
 	
+	if data == white:
+		get_tree().call_group("capture", "capture")
 	# 2 black -> remove split
 	if not data == black:
 		return

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Screenshot from 2022-08-15 13-14-03.png-5c039d1daede6121921f2aac31ca1d5c.stex"
+path="res://.import/screen_capture.png-b08ef33099c2dab0e3f79fe757d298e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screenshot from 2022-08-15 13-14-03.png"
-dest_files=[ "res://.import/Screenshot from 2022-08-15 13-14-03.png-5c039d1daede6121921f2aac31ca1d5c.stex" ]
+source_file="res://addons/screen_capture/screen_capture.png"
+dest_files=[ "res://.import/screen_capture.png-b08ef33099c2dab0e3f79fe757d298e7.stex" ]
 
 [params]
 

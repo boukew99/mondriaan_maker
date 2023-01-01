@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/camera_snap.wav-8caa49c03753faba53759ce059dc0c00.sample"
+path="res://.import/camera_snap.wav-72ffc13c1b76c96e7d1bc27bb7140364.sample"
 
 [deps]
 
-source_file="res://screen_capture/camera_snap.wav"
-dest_files=[ "res://.import/camera_snap.wav-8caa49c03753faba53759ce059dc0c00.sample" ]
+source_file="res://addons/screen_capture/camera_snap.wav"
+dest_files=[ "res://.import/camera_snap.wav-72ffc13c1b76c96e7d1bc27bb7140364.sample" ]
 
 [params]
 
