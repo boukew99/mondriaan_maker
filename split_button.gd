@@ -53,10 +53,11 @@ func can_drop_data(_position, data):
 	return data is Color
 
 func drop_data(position, data):
+	if data == white and modulate == white:
+		get_tree().call_group("capture", "capture")
+		
 	modulate = data
 	
-	if data == white:
-		get_tree().call_group("capture", "capture")
 	# 2 black -> remove split
 	if not data == black:
 		return

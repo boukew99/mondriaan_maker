@@ -15,7 +15,7 @@ func capture(bounding_rect = Rect2(Vector2.ZERO, OS.window_size) ): # useful wit
 	preview.texture = texture
 	
 	popup_centered()
-	$Captured.play()
+#	$Captured.play()
 	
 	emit_signal("captured")
 	

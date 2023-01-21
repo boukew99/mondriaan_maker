@@ -11,10 +11,10 @@ config_version=4
 [application]
 
 config/name="Mondriaan Maker"
-run/main_scene="res://scenes/mondriaan.tscn"
+run/main_scene="res://mondriaan.tscn"
 run/low_processor_mode=true
 boot_splash/bg_color=Color( 0.878431, 0.898039, 0.905882, 1 )
-config/icon="res://media/icon.png"
+config/icon="res://icon.png"
 config/windows_native_icon="res://windows_icon.ico"
 
 [display]
