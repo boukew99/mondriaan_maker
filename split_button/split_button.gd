@@ -5,7 +5,8 @@ const red = Color("d4121a")
 const yellow = Color("f0ce06")
 const black = Color("0e2721")
 const white = Color("e0e5e7")
-const palette = [blue, red, yellow, black, white]
+# Palette from: <https://jxapprentice.com/en/art-color-chain-r1-en/>
+const palette = [blue, red, yellow, black, white] 
 
 var rng = RandomNumberGenerator.new()
 const split_value = 1.116481401 # (1 / 1.613 + 1.613) / 2
