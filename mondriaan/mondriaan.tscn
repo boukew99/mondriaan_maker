@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://split_button/split_button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://mondriaan/split_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://screen_capture/screen_capture.tscn" type="PackedScene" id=4]
 
 [sub_resource type="StyleBoxFlat" id=3]
